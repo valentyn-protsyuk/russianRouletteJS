@@ -158,6 +158,35 @@
             "next_state" : "player_lost",
             "delay": 3000
         },
+        "npc_turn" : {
+            "text" : "Enemy's turn",
+            "turn_count": "count",
+            "image_change" : "<img src=\"imgs/playerWait.gif\" class=\"my_img\">",
+            "stim_change": 1,
+            "next_state" :["npc_death","npc_empty","npc_empty","npc_empty","npc_empty","npc_empty"]
+        },
+        "npc_empty":{
+            "text" : "Enemy's turn",
+            "image_change" : "<img src=\"imgs/npcLucky.gif\" class=\"my_img\">",
+            "play_sound" : "sound/click.mp3",
+            "stim_change": 2,
+            "next_state" : "player_turn",
+            "delay": 1500
+        },
+        "npc_death" : { 
+            "text" : "Enemy Died!",
+            "image_change" : "<img src=\"imgs/npcDeath.gif\" class=\"my_img\">",
+            "play_sound" : "sound/shot.mp3",
+            "dope_change": 5,
+            "next_state" : "player_won",
+            "delay": 3000
+        },
+        "npc_give_up" : { 
+            "image_change" : "<img src=\"imgs/surrender.gif\" class=\"my_img\">",
+            "dope_change": 5,
+            "next_state" : "player_won",
+            "delay": 3000
+        },
         
     }
 }
