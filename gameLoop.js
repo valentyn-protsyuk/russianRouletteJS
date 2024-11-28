@@ -175,3 +175,8 @@ function finalTurn(who){
     }
 }
 
+function printTotal(){
+    console.log('----------------  Totals  ----------------')
+    console.log('Stim: ' + stim);
+    console.log('Dope: ' + dope);
+}
