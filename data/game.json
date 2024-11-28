@@ -2,6 +2,24 @@
     "start_state" : "main_menu",
 
     "states" : {
+        "loading":{
+            "text" : "",
+            "image_change" : "<img src=\"imgs/loading.gif\" class=\"my_img\">",
+            "next_state" : "continue",
+            "delay": 3000
+        },
+        "continue":{
+            "text" : "",
+            "image_change" : "<img src=\"imgs/loading.gif\" class=\"my_img\">",
+            "show_btns": 1,
+            "change_label": ["Continue"],
+            "next_state" : [ 
+                               {
+                                    "state_name" : "main_menu",
+                                    "key_input"  : "A"
+                                }
+                            ]
+        },
         
     }
 }
