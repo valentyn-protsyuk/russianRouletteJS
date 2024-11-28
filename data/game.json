@@ -187,7 +187,29 @@
             "next_state" : "player_won",
             "delay": 3000
         },
-        
+        "player_won" : { 
+            "text" : "You won!",
+            "image_change" : "",
+            "play_sound" : "sound/winrSong.mp3",
+            "show_btns": 2,
+            "change_label": ["Restart","Main menu"],
+            "turns_reset":"reset",
+            "dope_change": 20,
+            "print_totals": "print",
+            "next_state" : [ 
+                               {
+                                    "state_name" : "load_revolver",
+                                    "key_input"  : "A"
+                                },
+                                {
+                                    "state_name" : "main_menu",
+                                    "key_input"  :"B"
+                                }
+                            ]
+        },
+        "exit":{
+            "text" : "See you next time"
+        }
     }
 }
 
