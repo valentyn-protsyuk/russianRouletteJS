@@ -150,6 +150,14 @@
                                 }
                             ]
         }, 
+        "give_up" : { 
+            "text" : "You surrender :c",
+            "image_change" : "<img src=\"imgs/surrender.gif\" class=\"my_img\">",
+            "play_sound" : "sound/surrender.mp3",
+            "stim_change": -10,
+            "next_state" : "player_lost",
+            "delay": 3000
+        },
         
     }
 }
