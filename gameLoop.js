@@ -113,3 +113,10 @@ function next_state( state) {
         }
     }
 }
+
+//randomizer
+function pick_a_winner( input_array ) {
+    return  input_array[(Math.floor(Math.random() * input_array.length))];
+ }
+ 
+ 
