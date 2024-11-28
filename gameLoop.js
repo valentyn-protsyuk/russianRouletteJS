@@ -154,3 +154,11 @@ function btn_hide(){
     }
 }
 
+//button labels
+function btn_change(btn_lbls){
+    const btns = ["a","b","c","d","e"];
+    for(i = 0; i < btn_lbls.length; i++){
+        $("#but_" + btns[i]).html(btn_lbls[i]);
+    }
+}
+
