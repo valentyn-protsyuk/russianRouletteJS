@@ -88,6 +88,14 @@
                                 }
                             ]
         },
+        "coin":{
+            "text" : "Coin flip!",
+            "image_change" : "<img src=\"imgs/coinFlip.gif\" class=\"my_img\">",
+            "play_sound" : "sound/coin.mp3", 
+            "next_state" : ["player_turn", "npc_turn"],
+            "stim_change": 2,
+            "delay": 2500
+        },
         
     }
 }
