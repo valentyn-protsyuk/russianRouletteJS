@@ -20,6 +20,24 @@
                                 }
                             ]
         },
+        "main_menu": {
+            "play_sound" : "sound/menuSong.mp3",
+            "text" : "Welcome to Russian Roulette",
+            "image_change" : "",
+            "show_btns": 2,
+            "change_label": ["Start","Exit"],
+            "stim_change": 1,
+            "next_state" : [ 
+                               {
+                                    "state_name" : "story",
+                                    "key_input"  : "A"
+                                },
+                                {
+                                    "state_name" : "exit",
+                                    "key_input"  :"B"
+                                }
+                            ]
+        },
         
     }
 }
