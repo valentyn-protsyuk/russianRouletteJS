@@ -119,4 +119,20 @@ function pick_a_winner( input_array ) {
     return  input_array[(Math.floor(Math.random() * input_array.length))];
  }
  
- 
+ //take input from the button and choose next state
+ function key_input(what_key){
+    for(i=0; i< game_data['states'][current_state]['next_state'].length; i++){
+        if( what_key == game_data['states'][current_state]['next_state'][i]['key_input']) {
+            //single next state
+            if ( typeof game_data['states'][current_state]['next_state'][i]['state_name'] == "string"){
+                next_state(game_data['states'][current_state]['next_state'][i]['state_name'])
+            }
+            //random next state
+            else{
+                next_state(pick_a_winner(game_data['states'][current_state]['next_state'][i]['state_name']) )
+            }
+        } 
+    }
+
+    console.log(what_key);
+}
