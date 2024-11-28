@@ -96,6 +96,60 @@
             "stim_change": 2,
             "delay": 2500
         },
+        "player_turn" : {
+            "text" : "Your turn",
+            "image_change" : "<img src=\"imgs/playerWait.gif\" class=\"my_img\">",
+            "show_btns": 2,
+            "turn_count": "count",
+            "stim_change": 1,
+            "change_label": ["Pull trigger","Give up"],
+            "next_state" :[ 
+                                {
+                                    "state_name" : ["player_death","player_empty","player_empty","player_empty","player_empty","player_empty"],
+                                    "key_input"  : "A"
+                                },
+                                {
+                                    "state_name" : "give_up",
+                                     "key_input"  :"B"
+                                }
+                         ]
+        },
+        "player_empty":{
+            "text" : "Empty!",
+            "image_change" : "<img src=\"imgs/playerLucky.gif\" class=\"my_img\">",
+            "play_sound" : "sound/click.mp3",
+            "dope_change": 2,
+            "next_state" : "npc_turn",
+            "delay": 2500
+        },
+        "player_death" : { 
+            "text" : "Bang!",
+            "image_change" : "<img src=\"imgs/playerDeath.gif\" class=\"my_img\">",
+            "play_sound" : "sound/shot.mp3",
+            "stim_change": 5,
+            "next_state" : "player_lost",
+            "delay": 1900
+        }, 
+        "player_lost" : { 
+            "text" : "You lost!",
+            "image_change" : "",
+            "play_sound" : "sound/looserSong2.mp3",
+            "show_btns": 2,
+            "change_label": ["Try again","Main menu"],
+            "stim_change": 20,
+            "print_totals": "print",
+            "turns_reset":"reset",
+            "next_state" : [ 
+                               {
+                                    "state_name" : "load_revolver",
+                                    "key_input"  : "A"
+                                },
+                                {
+                                    "state_name" : "main_menu",
+                                    "key_input"  :"B"
+                                }
+                            ]
+        }, 
         
     }
 }
