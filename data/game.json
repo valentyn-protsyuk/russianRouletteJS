@@ -50,6 +50,44 @@
                                 }
                             ]
         },
+        "load_revolver" : {
+            "text" : "Loading...",
+            "image_change" : "<img src=\"imgs/loadBullet.gif\" class=\"my_img\">",
+            "play_sound" : "sound/loadBullet.mp3",
+            "dope_change": 1,
+            "next_state" : "game_start",
+            "delay": 500
+        },
+        "game_start" : {
+            "text" : "Loading...",
+            "image_change" : "<img src=\"imgs/cylinderSpin.gif\" class=\"my_img\">",
+            "play_sound" : "sound/spin3.mp3", 
+            "dope_change": 1,
+            "next_state" : "start",
+            "delay": 2300
+        },  
+        "start": {
+            "text" : "Choose who goes first",
+            "show_btns": 3,
+            "image_change" : "",
+            "change_label": ["You","Comrade","Coin flip"],
+            "turns_reset":"reset",
+            "stim_change": 1,
+            "next_state" : [ 
+                                {
+                                    "state_name" : "player_turn",
+                                    "key_input"  : "A"
+                                },
+                                {
+                                    "state_name" : "npc_turn",
+                                    "key_input"  :"B"
+                                },
+                                {
+                                    "state_name" : "coin",
+                                    "key_input"  :"C"
+                                }
+                            ]
+        },
         
     }
 }
