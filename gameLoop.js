@@ -162,3 +162,16 @@ function btn_change(btn_lbls){
     }
 }
 
+function finalTurn(who){
+    console.log('-------------------------------> '+ who);
+    if(who==='player_empty' || who==='player_death'){
+        return 'player_death';
+    }
+    else if(who==='give_up'){
+        return 'give_up';
+    }
+    else{
+        return 'npc_death';
+    }
+}
+
