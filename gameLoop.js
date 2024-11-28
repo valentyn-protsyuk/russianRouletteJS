@@ -136,3 +136,21 @@ function pick_a_winner( input_array ) {
 
     console.log(what_key);
 }
+
+
+//button visibility functions
+function btn_show(btn_num){
+    btn_hide();
+    const btns = ["a","b","c","d","e"];
+    for(i = 0; i < btn_num; i++){
+        $("#but_" + btns[i]).show();
+    }
+}
+
+function btn_hide(){
+    const btns = ["a","b","c","d","e"];
+    for(i = 0; i < 5; i++){
+        $("#but_" + btns[i]).hide();
+    }
+}
+
