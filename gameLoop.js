@@ -8,7 +8,7 @@ var turns = 0;
 
 $.getJSON( "data/game.json", function( data ) {
         game_data = data;
-        $('#game_title').html( game_data['states'][ data['start_state'] ]['text'] );
+        $('#game_title').html( game_data['states'][ data['start_state'] ]['title'] );
         next_state('loading'); 
 
 });

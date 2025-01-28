@@ -23,7 +23,7 @@
                             ]
         },
         "main_menu": {
-            "play_sound" : "sound/menuSong.mp3",
+            "play_sound" : "sound/menu.m4a",
             "title" : "Welcome to Russian Roulette",
             "text" : "",
             "image_change" : "",
@@ -145,7 +145,7 @@
             "title" : "You lost!",
             "text" : "",
             "image_change" : "",
-            "play_sound" : "sound/looserSong2.mp3",
+            "play_sound" : "sound/loss.m4a",
             "show_btns": 2,
             "change_label": ["Try again","Main menu"],
             "stim_change": 20,
@@ -207,7 +207,7 @@
             "title" : "You won!",
             "text" : "",
             "image_change" : "",
-            "play_sound" : "sound/winrSong.mp3",
+            "play_sound" : "sound/win.m4a",
             "show_btns": 2,
             "change_label": ["Restart","Main menu"],
             "turns_reset":"reset",
@@ -225,7 +225,9 @@
                             ]
         },
         "exit":{
-            "title" : "See you next time"
+            "title" : "See you next time",
+            "text" : ""
+
         }
     }
 }
