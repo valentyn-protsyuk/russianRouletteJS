@@ -41,6 +41,8 @@ function next_state( state) {
         btn_change(game_data['states'][ current_state ]['change_label']);
     }
 
+    /*
+    
     //stim change
     if (game_data['states'][ current_state ]['stim_change'] != null){
             console.log("+ stim " + game_data['states'][ current_state ]['stim_change'] ) 
@@ -59,6 +61,7 @@ function next_state( state) {
         stim = 0;
         dope = 0;
     }
+    */
 
     //sound
     if (game_data['states'][ current_state ]['play_sound'] != null){
@@ -96,7 +99,7 @@ function next_state( state) {
             }
             //random next state
             else{
-                next_state(pick_a_winner(game_data['states'][current_state]['next_state']));
+                next_state(pick_a_winner(game_data['states'][current_state]['next_state'], turns));
             }
         }
         //if there is delay call timeout
@@ -110,7 +113,7 @@ function next_state( state) {
                 }
                 //random next state
                 else{
-                    next_state(pick_a_winner(game_data['states'][current_state]['next_state']));
+                    next_state(pick_a_winner(game_data['states'][current_state]['next_state'], turns));
                 } 
             }, game_data['states'][ current_state ]['delay']);
         }
@@ -118,8 +121,10 @@ function next_state( state) {
 }
 
 //randomizer
-function pick_a_winner( input_array ) {
-    return  input_array[(Math.floor(Math.random() * input_array.length))];
+function pick_a_winner( input_array, turn) {
+    let randomInt = Math.floor(Math.random() * (input_array.length - turn) + turn);
+    console.log("random: " + randomInt+ " State: " + input_array[randomInt]);
+    return  input_array[randomInt];
  }
  
  //take input from the button and choose next state
@@ -132,7 +137,7 @@ function pick_a_winner( input_array ) {
             }
             //random next state
             else{
-                next_state(pick_a_winner(game_data['states'][current_state]['next_state'][i]['state_name']) )
+                next_state(pick_a_winner(game_data['states'][current_state]['next_state'][i]['state_name'], turns))
             }
         } 
     }
