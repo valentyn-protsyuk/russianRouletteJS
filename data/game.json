@@ -39,7 +39,7 @@
                             ]
         },
         "story":{
-            "text" : "As tensions escalated between you and your comrade, your disagreement reached a breaking point. With no resolution in sight, the unthinkable was proposed—a game of russian roulette to settle your dispute. Your heart is pounding, recognizing the gravity of the moment you reluctantly agreed. Each click of the revolver will amplify the intensity until fate intervenes, determining the outcome.",
+            "text" : "As tensions escalated between two friends, their disagreement reached a breaking point. With no resolution in sight, the unthinkable was proposed—a game of russian roulette to settle their dispute. Each click of the revolver will amplify the intensity until fate intervenes, determining the outcome.",
             "show_btns": 1,
             "change_label": ["Continue"],
             "stim_change": 1,

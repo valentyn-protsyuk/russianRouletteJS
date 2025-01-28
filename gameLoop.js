@@ -9,7 +9,7 @@ var turns = 0;
 $.getJSON( "data/game.json", function( data ) {
         game_data = data;
         //current_state = data['start_state'];
-        $('#game_text').html( game_data['states'][ data['start_state'] ]['text'] );
+        $('#game_title').html( game_data['states'][ data['start_state'] ]['text'] );
         next_state('loading'); 
 
 });
@@ -99,7 +99,7 @@ function next_state( state) {
         //if there is delay call timeout
         else{
             if (game_data['states'][ current_state ]['show_text'] != null){
-                $('#game_text').html( game_data['states'][ current_state ]['show_text'])
+                $('#game_title').html( game_data['states'][ current_state ]['show_text'])
             }
             setTimeout(function() {
                 if ( typeof game_data['states'][current_state]['next_state'] == "string"){

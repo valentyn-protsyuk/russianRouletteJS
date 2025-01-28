@@ -1,11 +1,63 @@
-#game_text{
-    color: white;
-    font-size: 80px;
+:root {
+    /* --clr-dark: #010101; */
+    --clr-dark: #070a13;
+    --clr-light: #f1f5f9;
+    --clr-slate400: #94a3b8;
+    --clr-slate600: #475569;
+    --clr-slate800: #1e293b;
+    --clr-violet: #902bf5;
+
+    --size-xxs: 0.5rem;
+    --size-xs: 0.75rem;
+    --size-s: 0.875rem;
+    --size-base: 1rem;
+    --size-l: 1.125rem;
+    --size-xl: 1.25rem;
+    --size-2xl: 1.5rem;
+    --size-3xl: 1.875rem;
+    --size-4xl: 2.25rem;
+    --size-5xl: 3rem;
+    --size-6xl: 3.75rem;
+    --size-7xl: 4.5rem;
+    --size-8xl: 6rem;
+    --size-9xl: 8rem;
+    --size-10xl: 10rem;
+}
+#main {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+#game_title{
+    color: var(--clr-slate400);
+    text-transform: uppercase;
+    font-size: var(--size-4xl);
+    letter-spacing: -0.05em;
+    line-height: 0.9;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 5%;
     margin-right: 5%;
     text-align: center;
+}
+
+#game_text{
+    max-width: 60ch;
+    font-size: var(--size-s);
+    color: var(--clr-slate600);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+body {
+    font-family: 'Archivo', sans-serif;
+    background-color: var(--clr-dark);
+    color: var(--clr-light);
 }
 
 .my_img{
@@ -17,15 +69,28 @@
     margin-bottom: 10px;
 }
 
-.btn{
-    margin: auto;
-    font-size: 50px;
+.btn__ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    margin-top: 5px;
-    color: white;
-    height: auto;
-    width: auto;
-    background-color: black;
-    border: 2px solid white;
-    display:block;
+    align-items: center;
+    gap: 1rem;
+}
+.btn {
+    font-size: var(--size-s);
+    text-decoration: none;
+    background: none;
+    font-weight: 600;
+    color: var(--clr-slate600);
+    cursor: pointer;
+    border: none;
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+    box-shadow: 0 0.1rem .4rem #902bf5;
+}
+
+.btn:hover {
+    color: var(--clr-violet);
 }
