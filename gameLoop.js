@@ -8,7 +8,6 @@ var turns = 0;
 
 $.getJSON( "data/game.json", function( data ) {
         game_data = data;
-        //current_state = data['start_state'];
         $('#game_title').html( game_data['states'][ data['start_state'] ]['text'] );
         next_state('loading'); 
 
@@ -66,10 +65,14 @@ function next_state( state) {
         audioElement.setAttribute('src', game_data['states'][ current_state ]['play_sound']);
         audioElement.play();
     }
+
+    //if there is a title in player state display it
+    if (game_data['states'][ current_state ]['text'] != null){
+        $('#game_title').html( game_data['states'][ current_state ]['title'] );
+    }
     
     //if there is text in player state display it
     if (game_data['states'][ current_state ]['text'] != null){
-        //console.log("Header: " + game_data['states'][ current_state ]['text']);
         $('#game_text').html( game_data['states'][ current_state ]['text'] );
     }
     

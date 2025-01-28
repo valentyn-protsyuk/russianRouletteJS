@@ -23,6 +23,7 @@
     --size-9xl: 8rem;
     --size-10xl: 10rem;
 }
+
 #main {
     text-align: center;
     display: flex;
@@ -39,19 +40,13 @@
     letter-spacing: -0.05em;
     line-height: 0.9;
     margin-top: 50px;
-    margin-bottom: 50px;
-    margin-left: 5%;
-    margin-right: 5%;
-    text-align: center;
 }
 
 #game_text{
     max-width: 60ch;
-    font-size: var(--size-s);
+    font-size: var(--size-base);
     color: var(--clr-slate600);
     margin-top: 50px;
-    margin-bottom: 50px;
-    text-align: center;
 }
 
 body {
@@ -60,10 +55,9 @@ body {
     color: var(--clr-light);
 }
 
+
 .my_img{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     height: 350px;
     width: 700px;
     margin-bottom: 10px;
@@ -79,7 +73,7 @@ body {
     gap: 1rem;
 }
 .btn {
-    font-size: var(--size-s);
+    font-size: var(--size-base);
     text-decoration: none;
     background: none;
     font-weight: 600;

@@ -3,12 +3,14 @@
 
     "states" : {
         "loading":{
+            "title" : "",
             "text" : "",
             "image_change" : "<img src=\"imgs/loading.gif\" class=\"my_img\">",
             "next_state" : "continue",
             "delay": 3000
         },
         "continue":{
+            "title" : "",
             "text" : "",
             "image_change" : "<img src=\"imgs/loading.gif\" class=\"my_img\">",
             "show_btns": 1,
@@ -22,7 +24,8 @@
         },
         "main_menu": {
             "play_sound" : "sound/menuSong.mp3",
-            "text" : "Welcome to Russian Roulette",
+            "title" : "Welcome to Russian Roulette",
+            "text" : "",
             "image_change" : "",
             "show_btns": 2,
             "change_label": ["Start","Exit"],
@@ -39,6 +42,7 @@
                             ]
         },
         "story":{
+            "title" : "Lore",
             "text" : "As tensions escalated between two friends, their disagreement reached a breaking point. With no resolution in sight, the unthinkable was proposed—a game of russian roulette to settle their dispute. Each click of the revolver will amplify the intensity until fate intervenes, determining the outcome.",
             "show_btns": 1,
             "change_label": ["Continue"],
@@ -51,7 +55,8 @@
                             ]
         },
         "load_revolver" : {
-            "text" : "Loading...",
+            "title" : "Loading...",
+            "text" : "",
             "image_change" : "<img src=\"imgs/loadBullet.gif\" class=\"my_img\">",
             "play_sound" : "sound/loadBullet.mp3",
             "dope_change": 1,
@@ -59,7 +64,8 @@
             "delay": 500
         },
         "game_start" : {
-            "text" : "Loading...",
+            "title" : "Loading...",
+            "text" : "",
             "image_change" : "<img src=\"imgs/cylinderSpin.gif\" class=\"my_img\">",
             "play_sound" : "sound/spin3.mp3", 
             "dope_change": 1,
@@ -67,10 +73,11 @@
             "delay": 2300
         },  
         "start": {
-            "text" : "Choose who goes first",
+            "title" : "Choose who goes first",
+            "text" : "",
             "show_btns": 3,
             "image_change" : "",
-            "change_label": ["You","Comrade","Coin flip"],
+            "change_label": ["You","Enemy","Coin flip"],
             "turns_reset":"reset",
             "stim_change": 1,
             "next_state" : [ 
@@ -89,7 +96,8 @@
                             ]
         },
         "coin":{
-            "text" : "Coin flip!",
+            "title" : "Coin flip!",
+            "text" : "",
             "image_change" : "<img src=\"imgs/coinFlip.gif\" class=\"my_img\">",
             "play_sound" : "sound/coin.mp3", 
             "next_state" : ["player_turn", "npc_turn"],
@@ -97,7 +105,8 @@
             "delay": 2500
         },
         "player_turn" : {
-            "text" : "Your turn",
+            "title" : "Your turn",
+            "text" : "",
             "image_change" : "<img src=\"imgs/playerWait.gif\" class=\"my_img\">",
             "show_btns": 2,
             "turn_count": "count",
@@ -115,7 +124,8 @@
                          ]
         },
         "player_empty":{
-            "text" : "Empty!",
+            "title" : "Empty!",
+            "text" : "",
             "image_change" : "<img src=\"imgs/playerLucky.gif\" class=\"my_img\">",
             "play_sound" : "sound/click.mp3",
             "dope_change": 2,
@@ -123,7 +133,8 @@
             "delay": 2500
         },
         "player_death" : { 
-            "text" : "Bang!",
+            "title" : "Bang!",
+            "text" : "",
             "image_change" : "<img src=\"imgs/playerDeath.gif\" class=\"my_img\">",
             "play_sound" : "sound/shot.mp3",
             "stim_change": 5,
@@ -131,7 +142,8 @@
             "delay": 1900
         }, 
         "player_lost" : { 
-            "text" : "You lost!",
+            "title" : "You lost!",
+            "text" : "",
             "image_change" : "",
             "play_sound" : "sound/looserSong2.mp3",
             "show_btns": 2,
@@ -151,7 +163,8 @@
                             ]
         }, 
         "give_up" : { 
-            "text" : "You surrender :c",
+            "title" : "You surrender :c",
+            "text" : "",
             "image_change" : "<img src=\"imgs/surrender.gif\" class=\"my_img\">",
             "play_sound" : "sound/surrender.mp3",
             "stim_change": -10,
@@ -159,14 +172,16 @@
             "delay": 3000
         },
         "npc_turn" : {
-            "text" : "Enemy's turn",
+            "title" : "Enemy's turn",
+            "text" : "",
             "turn_count": "count",
             "image_change" : "<img src=\"imgs/playerWait.gif\" class=\"my_img\">",
             "stim_change": 1,
             "next_state" :["npc_death","npc_empty","npc_empty","npc_empty","npc_empty","npc_empty"]
         },
         "npc_empty":{
-            "text" : "Enemy's turn",
+            "title" : "Enemy's turn",
+            "text" : "",
             "image_change" : "<img src=\"imgs/npcLucky.gif\" class=\"my_img\">",
             "play_sound" : "sound/click.mp3",
             "stim_change": 2,
@@ -174,7 +189,8 @@
             "delay": 1500
         },
         "npc_death" : { 
-            "text" : "Enemy Died!",
+            "title" : "Enemy Died!",
+            "text" : "",
             "image_change" : "<img src=\"imgs/npcDeath.gif\" class=\"my_img\">",
             "play_sound" : "sound/shot.mp3",
             "dope_change": 5,
@@ -188,7 +204,8 @@
             "delay": 3000
         },
         "player_won" : { 
-            "text" : "You won!",
+            "title" : "You won!",
+            "text" : "",
             "image_change" : "",
             "play_sound" : "sound/winrSong.mp3",
             "show_btns": 2,
@@ -208,7 +225,7 @@
                             ]
         },
         "exit":{
-            "text" : "See you next time"
+            "title" : "See you next time"
         }
     }
 }
