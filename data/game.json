@@ -43,7 +43,7 @@
         },
         "story":{
             "title" : "Lore",
-            "text" : "As tensions escalated between two friends, their disagreement reached a breaking point. With no resolution in sight, the unthinkable was proposed—a game of russian roulette to settle their dispute. Each click of the revolver will amplify the intensity until fate intervenes, determining the outcome.",
+            "text" : "As tensions escalated between two friends, their disagreement reached a breaking point. With no resolution in sight, the unthinkable was proposed—a game of russian roulette to settle their dispute.",
             "show_btns": 1,
             "change_label": ["Continue"],
             "stim_change": 1,

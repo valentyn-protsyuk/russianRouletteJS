@@ -20,10 +20,13 @@ function next_state( state) {
     
     
     //6 turns max
+    /*
+
     if(turns === 6){
         current_state = finalTurn(current_state);
         turns = 0;
     }
+     */
 
     //reset turns
     if (game_data['states'][ current_state ]['turns_reset'] != null){
@@ -170,6 +173,8 @@ function btn_change(btn_lbls){
     }
 }
 
+/*
+
 function finalTurn(who){
     console.log('-------------------------------> '+ who);
     if(who==='player_empty' || who==='player_death'){
@@ -182,6 +187,8 @@ function finalTurn(who){
         return 'npc_death';
     }
 }
+*/
+
 
 function printTotal(){
     console.log('----------------  Totals  ----------------')
