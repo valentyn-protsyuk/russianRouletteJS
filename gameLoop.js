@@ -17,16 +17,6 @@ function next_state( state) {
     //update current state
     console.log("Current State = " + current_state + " --> New State= " + state) 
     current_state = state
-    
-    
-    //6 turns max
-    /*
-
-    if(turns === 6){
-        current_state = finalTurn(current_state);
-        turns = 0;
-    }
-     */
 
     //reset turns
     if (game_data['states'][ current_state ]['turns_reset'] != null){
@@ -44,32 +34,12 @@ function next_state( state) {
         btn_change(game_data['states'][ current_state ]['change_label']);
     }
 
-    /*
-    
-    //stim change
-    if (game_data['states'][ current_state ]['stim_change'] != null){
-            console.log("+ stim " + game_data['states'][ current_state ]['stim_change'] ) 
-            stim = stim + game_data['states'][ current_state ]['stim_change']
-    }
-
-    //dope change
-    if (game_data['states'][ current_state ]['dope_change'] != null){
-        console.log("+ dope " + game_data['states'][ current_state ]['dope_change'] ) 
-        dope = dope + game_data['states'][ current_state ]['dope_change']
-    }
-
-    //totals
-    if(game_data['states'][ current_state ]['print_totals'] != null){
-        printTotal();
-        stim = 0;
-        dope = 0;
-    }
-    */
-
     //sound
     if (game_data['states'][ current_state ]['play_sound'] != null){
         audioElement.setAttribute('src', game_data['states'][ current_state ]['play_sound']);
+        audioElement.setAttribute('id', 'game_audio');
         audioElement.play();
+        document.body.appendChild(audioElement);  // Append to the DOM
     }
 
     //if there is a title in player state display it
@@ -148,7 +118,6 @@ function pick_a_winner( input_array, turn) {
     console.log(what_key);
 }
 
-
 //button visibility functions
 function btn_show(btn_num){
     btn_hide();
@@ -172,23 +141,6 @@ function btn_change(btn_lbls){
         $("#but_" + btns[i]).html(btn_lbls[i]);
     }
 }
-
-/*
-
-function finalTurn(who){
-    console.log('-------------------------------> '+ who);
-    if(who==='player_empty' || who==='player_death'){
-        return 'player_death';
-    }
-    else if(who==='give_up'){
-        return 'give_up';
-    }
-    else{
-        return 'npc_death';
-    }
-}
-*/
-
 
 function printTotal(){
     console.log('----------------  Totals  ----------------')
