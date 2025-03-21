@@ -40,7 +40,7 @@ Here's a quick overview of the project structure:
 ├── 📄 README.md
 ├── 📄 gameLoop.js
 ├── 📄 index.html
-├── 📄 mystylesheet.css
+└── 📄 mystylesheet.css
 
 ```
 
@@ -57,12 +57,6 @@ Clone the repository:
 
   ```sh
 cd russianRouletteJS
- ```
-## Install dependencies:
-
-  ```sh
-
-npm install
  ```
 
 ## Running Game Locally🚀
