@@ -4,7 +4,7 @@ Welcome to the **Russian Roulette Game** project! This repository contains code 
 
 ## About this game
 
-The game allows the player to choose who goes first and plays through a maximum of six rounds to determine the winner between the player and an NPC. The JSON file is being used to store all possible states. Then JavaScript to dynamically navigate between these states as the game progresses. To enhance the user experience, I incorporated GIFs, music, and sound effects for an immersive atmosphere.
+The game allows the player to choose who goes first and plays through a maximum of six rounds to determine the winner between the player and an NPC. The JSON file is being used to store all possible game states. Then JavaScript is being used to dynamically navigate between these states as the game progresses. To enhance the user experience, I incorporated GIFs, music, and sound effects for an immersive atmosphere.
 
 ## Project Structure 📁
 
