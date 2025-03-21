@@ -59,11 +59,18 @@ Clone the repository:
 cd russianRouletteJS
  ```
 
-## Running Game Locally🚀
+## Running Game Locally
 1) use command:
-**python -m http.server**
+```sh
+python -m http.server
+ ```
 or
-**py -m http.server**
+```sh
+py -m http.server
+```
 
 2) Click on local url in your terminal
+
+## Play the game online 🚀
+Link: https://valentyn-protsyuk.github.io/russianRouletteJS/
 
