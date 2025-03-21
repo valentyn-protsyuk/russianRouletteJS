@@ -12,35 +12,35 @@ Here's a quick overview of the project structure:
 ```plaintext
 📦 russianRouletteJS
 ├──📂 data
-│ └── game.json
+│ └── 📄 game.json
 ├── 📂 imgs
-│ ├── RRlogo.ico
-│ ├── coinFlip.gif
-│ ├── cylinderSpin.gif
-│ ├── loading.gif
-│ ├── npcDeath.gif
-│ ├── npcLucky.gif
-│ ├── playerDeath.gif
-│ ├── playerLucky.gif
-│ ├── playerWait.gif
-│ └── surrender.gif
+│ ├── 🖼️ RRlogo.ico
+│ ├── 🖼️ coinFlip.gif
+│ ├── 🖼️ cylinderSpin.gif
+│ ├── 🖼️ loading.gif
+│ ├── 🖼️ npcDeath.gif
+│ ├── 🖼️ npcLucky.gif
+│ ├── 🖼️ playerDeath.gif
+│ ├── 🖼️ playerLucky.gif
+│ ├── 🖼️ playerWait.gif
+│ └── 🖼️ surrender.gif
 ├── 📂 sound
-│ ├── click.mp3
-│ ├── coin.mp3
-│ ├── loadBullet.mp3
-│ ├── loss.m4a
-│ ├── menu.m4a
-│ ├── shot.mp3
-│ ├── shut.mp3
-│ ├── spin.mp3
-│ ├── spin2.mp3
-│ ├── spin3.mp3
-│ ├── surrender.mp3
-│ └── win.m4a
-├── README.md
-├── gameLoop.js
-├── index.html
-├── mystylesheet.css
+│ ├── 🎼 click.mp3
+│ ├── 🎼 coin.mp3
+│ ├── 🎼 loadBullet.mp3
+│ ├── 🎼 loss.m4a
+│ ├── 🎼 menu.m4a
+│ ├── 🎼 shot.mp3
+│ ├── 🎼 shut.mp3
+│ ├── 🎼 spin.mp3
+│ ├── 🎼 spin2.mp3
+│ ├── 🎼 spin3.mp3
+│ ├── 🎼 surrender.mp3
+│ └── 🎼 win.m4a
+├── 📄 README.md
+├── 📄 gameLoop.js
+├── 📄 index.html
+├── 📄 mystylesheet.css
 
 ```
 
@@ -71,6 +71,5 @@ npm install
 or
 **py -m http.server**
 
-2) go to this url in your browser:
-http://localhost:8000
+2) Click on local url in your terminal
 
